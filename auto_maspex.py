@@ -21,6 +21,13 @@ for i in range(3,35):
 for j in range (35,63):
     lenta.cell(row=j, column = 15, value = lenta_m.cell(row=j-33, column=7).value.date())
 lenta.cell(row=65, column=30, value='=COUNTIF(O3:O62'+',"='+ yesterday.strftime('%d.%m.%y')+'"')
+
+for k in range (3,35):
+    for m in range(16,32):
+        (lenta.cell(row=k, column=m, value=lenta_s.cell(row=k,column=m-4).value))
+        
+
+
 #print(lenta.cell(row=38, column=15).value.date())
 
 #test_parser = parser.parse(lenta.cell(row=38, column=15).value, dayfirst=True)
